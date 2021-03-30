@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
-<?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -10,8 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:controller="my_main.FXMLDocumentController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="my_main.FXMLDocumentController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -24,21 +22,16 @@
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
-      <JFXToggleButton layoutX="269.0" layoutY="89.0" prefHeight="60.0" prefWidth="58.0" text=" " unToggleColor="#03c33c" unToggleLineColor="#5ceb87" />
-      <Label layoutX="188.0" layoutY="87.0" prefHeight="60.0" prefWidth="74.0" text="Static" textFill="#5ceb87">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="360.0" layoutY="87.0" prefHeight="60.0" prefWidth="87.0" text="dynamic" textFill="#5ceb87">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Pane layoutX="166.0" layoutY="154.0" prefHeight="200.0" prefWidth="290.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-opacity: .8;">
+      <Pane layoutX="166.0" layoutY="111.0" prefHeight="243.0" prefWidth="290.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-opacity: .8;">
          <children>
-            <JFXTextField fx:id="time_static" labelFloat="true" layoutX="71.0" layoutY="35.0" prefHeight="25.0" prefWidth="148.0" promptText="Please Enter time with min" unFocusColor="BLACK" />
-            <JFXButton layoutX="88.0" layoutY="130.0" onAction="#static_ip" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #576b7c;" text="OK" textFill="WHITE" />
+            <JFXTextField fx:id="time_static" labelFloat="true" layoutX="56.0" layoutY="61.0" prefHeight="31.0" prefWidth="179.0" promptText="Please Enter time with min" unFocusColor="BLACK">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXTextField>
+            <JFXButton layoutX="69.0" layoutY="190.0" onAction="#static_ip" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: #576b7c;" text="OK" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></JFXButton>
          </children>
       </Pane>
    </children>
