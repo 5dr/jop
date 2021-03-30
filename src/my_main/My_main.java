@@ -34,6 +34,11 @@ public class My_main extends Application {
     public static void main(String[] args) {
         launch(args);
         
+        FXMLDocumentController c=new FXMLDocumentController();
+        
+        c.t1.cancel();
+        c.t.cancel();
+        
     }
     
 }

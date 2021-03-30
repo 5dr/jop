@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="my_main.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+
+<AnchorPane fx:controller="my_main.FXMLDocumentController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000; -fx-opacity: .6;" />
+      <Label layoutX="203.0" layoutY="23.0" prefHeight="60.0" prefWidth="203.0" text="Change IP" textFill="#00f6ff">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXToggleButton layoutX="269.0" layoutY="89.0" prefHeight="60.0" prefWidth="58.0" text=" " unToggleColor="#03c33c" unToggleLineColor="#5ceb87" />
+      <Label layoutX="188.0" layoutY="87.0" prefHeight="60.0" prefWidth="74.0" text="Static" textFill="#5ceb87">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="87.0" prefHeight="60.0" prefWidth="87.0" text="dynamic" textFill="#5ceb87">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="166.0" layoutY="154.0" prefHeight="200.0" prefWidth="290.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-opacity: .8;">
+         <children>
+            <JFXTextField fx:id="time_static" labelFloat="true" layoutX="71.0" layoutY="35.0" prefHeight="25.0" prefWidth="148.0" promptText="Please Enter time with min" unFocusColor="BLACK" />
+            <JFXButton layoutX="88.0" layoutY="130.0" onAction="#static_ip" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #576b7c;" text="OK" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>
